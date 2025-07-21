@@ -103,6 +103,11 @@
     .footer_texto2 p {
         padding-top: 80px;
     }
+
+    .footer_container_div2 button:hover {
+        background: var(--bg-laranja);
+        color: var(--cor-preto);
+    }
 }
 
 @media (max-width: 768px) {
@@ -122,8 +127,8 @@
     }
 
     .footer_container_div1 {
-       width: fit-content;
-       margin: 0 auto;
+        width: fit-content;
+        margin: 0 auto;
     }
 
     .footer_container_div1 div {
@@ -136,6 +141,6 @@
 
     .footer_links_container {
         margin-left: 78px;
-        
+
     }
 }
