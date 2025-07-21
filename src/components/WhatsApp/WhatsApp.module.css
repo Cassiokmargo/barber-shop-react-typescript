@@ -1,0 +1,38 @@
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.whatsapp img {
+    width: 70px;    
+    padding: .7rem;
+    background: #2CB842;
+    border-radius: 100px;    
+
+    box-shadow: 3px 3px 11px 4px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 3px 3px 11px 4px rgba(0,0,0,0.26);
+    -moz-box-shadow: 3px 3px 11px 4px rgba(0,0,0,0.26);
+    animation: floatingButton 4s ease-in-out infinite alternate;
+}
+
+@media (max-width:430px) {
+    .whatsapp {
+        right: 50px;
+    } 
+}
+
+
+@keyframes floatingButton {
+    0%,       
+    
+    100% {        
+        transform: translateY(-2px) rotate(20deg);
+    }
+    50% {        
+        transform: translateY(2px) rotate(-20deg);
+    }
+}
+
