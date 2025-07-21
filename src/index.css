@@ -55,7 +55,7 @@ li {
   font-family: var(--font-family-texto);
 }
 
-button, a {
+button {
   -webkit-tap-highlight-color: transparent;
 }
 

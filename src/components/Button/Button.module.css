@@ -14,19 +14,19 @@
 }
 
 .icon {
-   box-shadow: 10px 10px 3px -1px rgba(0,0,0,0.51);
-   -webkit-box-shadow: 6px 6px 3px -1px rgba(0,0,0,0.51);
-   -moz-box-shadow: 10px 10px 3px -1px rgba(0,0,0,0.51);
+    box-shadow: 10px 10px 3px -1px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: 6px 6px 3px -1px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 10px 10px 3px -1px rgba(0, 0, 0, 0.51);
 }
 
 .default:hover,
 .icon:hover {
-  background: var(--cor-preto);
-  color: var(--bg-laranja);
+    background: var(--cor-preto);
+    color: var(--bg-laranja);
 }
 
-
-button:active {
+.default:active,
+.icon:active {
     transform: scale(0.9);
 }
 
@@ -36,8 +36,8 @@ button:active {
         transform: scale(1);
     }
 
-    50% {        
-        opacity: 1;        
+    50% {
+        opacity: 1;
         transform: scale(.9)
     }
 
