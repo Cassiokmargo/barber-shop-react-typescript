@@ -30,6 +30,15 @@
     transform: scale(0.9);
 }
 
+@media (max-width: 1024px) {
+
+    .default:hover,
+    .icon:hover {
+        background: var(--bg-laranja);
+        color: var(--cor-preto);
+    }
+}
+
 @keyframes pulse {
     0% {
         opacity: 1;

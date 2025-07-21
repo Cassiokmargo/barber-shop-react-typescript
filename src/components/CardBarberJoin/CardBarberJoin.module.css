@@ -47,9 +47,15 @@
     color: var(--bg-laranja);
 }
 
+@media (max-width: 1024px) {
+    .cardbarberjoin_container_nome button:hover {
+        background: var(--bg-laranja);
+        color: var(--cor-preto);
+    }
+}
+
 @media (max-width: 430px) {
     .cardbarberjoin_container {
         width: 350px;
-        /* height: 400px; */
     }
 }
