@@ -6,27 +6,29 @@
     cursor: pointer;
     transition: 0.5s;
     font-family: var(--font-family-texto);
-    background: rgba(0,0,0,0.6)
+    background: rgba(0, 0, 0, 0.6)
 }
 
 .hamburguer-main {
     position: absolute;
-    border: 1px solid #fff; 
-    right: 32px;   
+    border: 1px solid #fff;
+    right: 32px;
     border-radius: 6px;
     cursor: pointer;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     transition: 0.5s;
-
 }
+
 
 @media (max-width: 768px) {
     .hamburguer {
         display: block;
     }
 }
+
 @media (max-width: 430px) {
     .hamburguer-main {
         right: 32px;
     }
+
 }
