@@ -1,25 +1,52 @@
+import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 import CardBarber from "../CardBarber";
 import CardBarberJoin from "../CardBarberJoin";
 import CardTituloESubtitulo from "../CardTituloESubtitulo";
 import styles from './FourSection.module.css'
+import { motion } from "motion/react"
 
 const FourSection = () => {
+  const { ref, isInView } = useScrollAnimation();
+
   return (
-    <section className={styles["four_section_container"]}>
-      <div className={styles["four_container_div"]}>
+    <section ref={ref} className={styles["four_section_container"]}>
+      <motion.div className={styles["four_container_div"]}
+         initial={{ opacity: 0, y: -40 }}
+          animate={
+            isInView
+              ? {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.7, delay: 0.5 },
+                }
+              : {}
+          }
+      
+      >
         <CardTituloESubtitulo
           h2="CONHEÇA NOSSOS ESPECIALISTAS"
           p="
             Cada membro da nossa equipe está comprometido em proporcionar uma experiência de higiene excepcional,
             garantindo que você saia do nosso salão com a melhor aparência e se sentindo no seu melhor."
         />
-      </div>
-      <div className={styles["four_container_div2"]}>
+      </motion.div>
+      <motion.div className={styles["four_container_div2"]}
+        initial={{ opacity: 0, x: -40 }}
+          animate={
+            isInView
+              ? {
+                  opacity: 1,
+                  x: 0,
+                  transition: { duration: 0.7, delay: 0.8 },
+                }
+              : {}
+          }
+      >
         <CardBarber nome="João Silva" descricao="Barbeiro Mestre" instagram="icons/instagram.svg" linkedin="icons/linkedin.svg" imagem="imagens/avatar1.svg"/>
         <CardBarber nome="Carlos Romero" descricao="Barbeiro" instagram="icons/instagram.svg" linkedin="icons/linkedin.svg" imagem="imagens/avatar2.svg"/>
         <CardBarber nome="Cleiton Brito" descricao="Barbeiro" instagram="icons/instagram.svg" linkedin="icons/linkedin.svg"imagem="imagens/avatar3.svg"/>
         <CardBarberJoin h3="Gostaria de se juntar à nossa equipe?" descricao="Envie o curriculo"/>
-      </div>
+      </motion.div>
     </section>
   );
 };
