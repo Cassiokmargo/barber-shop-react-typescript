@@ -6,7 +6,7 @@ const FirstSection = () => {
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
   };
-
+  
   return (
     <section className={`${styles.first_section}`}>
       <div className={styles["first_container_div1"]}>
